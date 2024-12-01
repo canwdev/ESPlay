@@ -113,8 +113,8 @@ void write_frame_rectangleLE(short left, short top, short width, short height, u
 
 void display_show_hourglass()
 {
-    write_frame_rectangleLE((LCD_WIDTH / 2) - (image_hourglass_empty_black_48dp.width / 2),
-                            (LCD_HEIGHT / 2) - (image_hourglass_empty_black_48dp.height / 2),
+    write_frame_rectangleLE(0,
+                            0,
                             image_hourglass_empty_black_48dp.width,
                             image_hourglass_empty_black_48dp.height,
                             image_hourglass_empty_black_48dp.pixel_data);

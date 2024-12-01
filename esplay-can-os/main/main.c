@@ -8,6 +8,7 @@
 
 // 核心驱动
 #include "display.h"
+#include "gamepad.h"
 
 
 // 初始化系统
@@ -18,9 +19,12 @@ void canos_init()
     // 启动显示屏
     display_prepare();
     display_init();
-    set_display_brightness(30);
+    set_display_brightness(100);
     printf("Display start success.\n");
     display_show_hourglass();
+
+    // 按键初始化
+    gamepad_init();
 }
 
 void app_main(void)
