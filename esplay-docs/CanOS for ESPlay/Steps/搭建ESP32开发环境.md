@@ -1,0 +1,5 @@
+- 安装 esp-idf-v4.4 环境
+	- [快速入门 - ESP32 - — ESP-IDF 编程指南 v4.4.4 文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.4.4/esp32/get-started/index.html)
+	- Windows 用户直接下载 [esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe](https://dl.espressif.com/dl/idf-installer/esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe)
+- 推荐使用 VS Code + esp-idf 插件，可以方便的编译、刷入或调试设备
+- 安装 CH341SER.EXE 驱动
