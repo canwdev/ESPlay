@@ -1,11 +1,28 @@
+> 建议用 Obsidian 打开 `esplay-docs` 文件夹查看此文档，否则图片可能展示不正常。
 ## 参考
 
 ![[esplay_LiiGuang.jpg]]
 
 - [ESPlay Micro微型开源游戏掌机（精修版2.0） - 嘉立创EDA开源硬件平台 (oshwhub.com)](https://oshwhub.com/LiiGuang/esplay-micro-V2#P6)
+	- 推荐使用此资料制作，以下内容全部根据此资料编写
 - [开源掌机 ESPLAY V0.3 游戏机 - 嘉立创EDA开源硬件平台 (oshwhub.com)](https://oshwhub.com/zxp1107/esplay_copy_copy_copy#P6)
 
-## 总结
+## 购买原材料
+
+- 主板
+	- [用【嘉立创下单助手】PC客户端领优惠券](https://www.bilibili.com/opus/775210888117354521)，每个月可以领1张PCB板20元免费券
+	- 目前加入了考试系统，必须通过考试（60分以上）才可领券，多考几次记住答案就能过
+	- 免费打样5个PCB板即可，具体下单流程自行搜索教程
+- 元器件（BOM）
+	- 查看本项目的【资料】文件夹，包含BOM修订版，根据内容购买元件即可
+	- 可以在嘉立创商城下单大部分电容、电阻、按键、芯片等元件
+	- ESP32推荐购买 `ESP32-WROVER-IE` 或 `ESP32-WROVER-E` 型号，内存越大越好反正也不贵
+		- IE 是外置天线，E 是内置天线。
+	- 部分找不到的芯片可以在淘宝搜索购买
+- 外壳
+	- 无需外壳，用M3铜柱和螺母固定
+	- 3D打印外壳：TODO
+## 经验总结
 
 - 对于贴片原件，可使用锡膏+热风枪来快速焊接
 - 对于 ESP32 Wrover 主控，不要使用锡膏的方式，容易出现芯片底部连锡，或者虚焊，应该用电烙铁
@@ -41,7 +58,8 @@
 	- 魔改 [esplay: 将github上的esplay项目继续完善](https://gitee.com/yvany/esplay/tree/master) 也可以实现中文展示
 	- 我在上面仓库的基础上修改了一个版本，支持大多数功能：[canwdev/esplay-retro-emulation at idf-v3.3 (github.com)](https://github.com/canwdev/esplay-retro-emulation/tree/idf-v3.3)
 - 外放喇叭游戏有声音，音乐播放器没声音
-	- 这个版本的ESPlay硬件似乎无法相应LR两个按钮，通过修改系统代码使用Menu键开启了外放功能，但是有底噪
+	- 原因：我使用的20211004版本LR肩键物理层有bug，导致L键无法触发
+	- 通过修改系统代码使用Menu键开启了外放功能
 - 外放喇叭有底噪
 	- 不知道是硬件设计问题还是电容问题
 
@@ -57,3 +75,8 @@
 
 - [[编译 esplay-base-firmware (esp-idf-4.4)]]
 - [[编译 esplay-retro-emulation (esp-idf-3.3)]]
+
+### 其他
+
+- ESP32 WROVER IE / ESP32 WROVER E 的区别是：IE是外置天线，E是内置天线。通过文档 [2201121630_Espressif-Systems-ESP32-WROVER-IE-8MB_C2934565.pdf (lcsc.com)](https://datasheet.lcsc.com/lcsc/2201121630_Espressif-Systems-ESP32-WROVER-IE-8MB_C2934565.pdf) 可以得知。
+- [ESP32选型一文就够，ESP32-WROOM-32、ESP32-WROVER、ESP32-S衍生模组、ESP32-PICO差异 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv15539489)

@@ -1,3 +1,5 @@
+# 开发中，请勿使用
+
 - 下载 Arduino IDE 2.3.3 https://www.arduino.cc/en/software
 - 配置 ESP32 开发板：https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
 - 安装库：

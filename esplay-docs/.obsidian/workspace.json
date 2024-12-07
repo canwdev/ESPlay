@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "751754e4c58d1271",
+        "id": "1a5167ba58453988",
         "type": "tabs",
         "children": [
           {
-            "id": "968ccabba20a67db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CanOS for ESPlay/CanOS for ESPlay.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CanOS for ESPlay"
-            }
-          },
-          {
-            "id": "36c11e2c2f8653c5",
+            "id": "e2143772ebba5996",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "ESPlay Micro 制作记"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,11 +162,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36c11e2c2f8653c5",
+  "active": "e2143772ebba5996",
   "lastOpenFiles": [
+    "原理图/Sheet_1.svg",
+    "CanOS for ESPlay/CanOS for ESPlay.md",
+    "原理图/Schematic_ESPlay-Micro微型开源游戏掌机（精修版2.0）_2024-12-07.pdf",
+    "ESPlay Micro 制作记.md",
+    "原理图/Sheet_2.svg",
+    "原理图",
     "ESP-IDF笔记.md",
     "CanOS for ESPlay/Steps/按键监听.md",
-    "CanOS for ESPlay/CanOS for ESPlay.md",
     "CanOS for ESPlay/Steps/点亮屏幕.md",
     "CanOS for ESPlay/Steps/assets/2024-12-01_105129.jpg",
     "CanOS for ESPlay/Steps/assets/Pasted image 20241201104421.png",
@@ -197,7 +187,6 @@
     "编译 esplay-retro-emulation (esp-idf-3.3).md",
     "assets/esplay-base-firmware.jpg",
     "assets/bootloader-ui.jpg",
-    "ESPlay Micro 制作记.md",
     "ESPlay 刷入固件.md",
     "assets/download.png"
   ]
