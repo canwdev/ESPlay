@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ESPlay Micro 制作记.md",
+                "file": "ESPlay 刷入固件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESPlay Micro 制作记"
+              "title": "ESPlay 刷入固件"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ESPlay Micro 制作记.md"
+                "file": "ESPlay 刷入固件.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of ESPlay Micro 制作记"
+              "title": "Outline of ESPlay 刷入固件"
             }
           }
         ],
@@ -164,10 +164,14 @@
   },
   "active": "e2143772ebba5996",
   "lastOpenFiles": [
+    "assets/Pasted image 20241218210256.png",
+    "ESPlay 刷入固件.md",
+    "ESPlay Micro 制作记.md",
+    "编译 esplay-retro-emulation (esp-idf-3.3).md",
+    "编译 esplay-base-firmware (esp-idf-4.4).md",
     "原理图/Sheet_1.svg",
     "CanOS for ESPlay/CanOS for ESPlay.md",
     "原理图/Schematic_ESPlay-Micro微型开源游戏掌机（精修版2.0）_2024-12-07.pdf",
-    "ESPlay Micro 制作记.md",
     "原理图/Sheet_2.svg",
     "原理图",
     "ESP-IDF笔记.md",
@@ -183,11 +187,7 @@
     "assets/ch340.jpg",
     "CanOS for ESPlay/Steps",
     "CanOS for ESPlay",
-    "编译 esplay-base-firmware (esp-idf-4.4).md",
-    "编译 esplay-retro-emulation (esp-idf-3.3).md",
     "assets/esplay-base-firmware.jpg",
-    "assets/bootloader-ui.jpg",
-    "ESPlay 刷入固件.md",
-    "assets/download.png"
+    "assets/bootloader-ui.jpg"
   ]
 }
