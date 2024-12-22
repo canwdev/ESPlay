@@ -90,9 +90,3 @@ D:\Espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe -m pip config set gl
     "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"D:\\\\Espressif\\\\tools\\\\openocd-esp32\\\\v0.11.0-esp32-20220706/openocd-esp32/share/openocd/scripts\",\"IDF_CCACHE_ENABLE\":\"1\"}"
 }
 ```
-
-## ESP32 各版本区别
-
-- ESP32 WROVER IE / ESP32 WROVER E 的区别是：IE是外置天线，E是内置天线。通过观察 [2201121630_Espressif-Systems-ESP32-WROVER-IE-8MB_C2934565.pdf (lcsc.com)](https://datasheet.lcsc.com/lcsc/2201121630_Espressif-Systems-ESP32-WROVER-IE-8MB_C2934565.pdf) 可以得知。
-- [ESP32选型一文就够，ESP32-WROOM-32、ESP32-WROVER、ESP32-S衍生模组、ESP32-PICO差异 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv15539489)
-- 官方产品对比：[ESP Product Selector (espressif.com)](https://products.espressif.com/#/product-comparison)

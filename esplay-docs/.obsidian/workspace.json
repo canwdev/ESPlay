@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "esp-idf-v4.2.md",
+                "file": "ESPlay Micro 制作记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "esp-idf-v4.2"
+              "title": "ESPlay Micro 制作记"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "v4.4",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "esp-idf-v4.2.md"
+                "file": "ESPlay Micro 制作记.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of esp-idf-v4.2"
+              "title": "Outline of ESPlay Micro 制作记"
             }
           }
         ],
@@ -164,12 +164,13 @@
   },
   "active": "d7505f21586a3463",
   "lastOpenFiles": [
-    "ESP-IDF笔记.md",
-    "ESPlay Micro 制作记.md",
     "ESPlay 刷入固件.md",
+    "ESPlay Micro 制作记.md",
     "编译 esplay-base-firmware (esp-idf-4.2).md",
-    "编译 esplay-retro-emulation (esp-idf-3.3).md",
+    "编译 esplay-retro-emulation (esp-idf-v3.3).md",
+    "assets/Pasted image 20241222200845.png",
     "esp-idf-v4.2.md",
+    "ESP-IDF笔记.md",
     "CanOS for ESPlay/Steps/搭建ESP32开发环境.md",
     "CanOS for ESPlay/Steps/Hello world.md",
     "CanOS for ESPlay/Steps/按键监听.md",
@@ -186,7 +187,6 @@
     "原理图",
     "CanOS for ESPlay/Steps/assets/2024-12-01_105129.jpg",
     "CanOS for ESPlay/Steps/assets/Pasted image 20241201104421.png",
-    "CanOS for ESPlay/Steps/assets/Pasted image 20241130232244.png",
     "CanOS for ESPlay/Steps/assets",
     "CanOS for ESPlay/Steps",
     "CanOS for ESPlay"
