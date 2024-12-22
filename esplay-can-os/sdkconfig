@@ -143,7 +143,6 @@ CONFIG_SDIO_DAT2_DISABLED=y
 # CONFIG_ESPLAY20_HW is not set
 CONFIG_ESPLAY_MICRO_HW=y
 # CONFIG_HW_CUSTOM is not set
-CONFIG_HW_LCD_TYPE=0
 # end of Hardware configuration
 
 #

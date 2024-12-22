@@ -38,7 +38,8 @@
 	- 加热主板再涂锡膏，可以让锡膏有流动性
 - 胆电容下方锡膏容易虚焊，如果插电开机看不到CH340 COM口设备，请先检查此处
 	- CH340不依赖ESP32芯片工作，可以不安装ESP32，检测电路是否正常
-
+- 发光二极管注意朝向：
+![[LED.jpg]]
 ## 制作过程记录
 
 - ESP32主控芯片连锡
@@ -67,17 +68,17 @@
 - 外放喇叭有底噪
 	- 不知道是硬件设计问题还是电容问题
 
+## 刷入固件
+
+- [[ESPlay 刷入固件]]
+
 ## 固件编译
 
-以下项目，我使用 ArchLinux（Manjaro）于 20221113 编译成功。
+以下项目，我使用 
+- Windows 11 于 20241222 编译成功。
+- ArchLinux（Manjaro）于 20221113 编译成功。
 
-- 如果使用 Linux 则不需要下载上述工具链，按照教程安装环境即可
-- ESP-IDF 下载：
-	- 编译 esplay-retro-emulation 需要 esp-idf-v3.3 版本 https://dl.espressif.com/dl/esp-idf/releases/esp-idf-v3.3.zip
-		- 如果使用 Windows，ESP-IDF 3.3工具链下载： [https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20181001.zip](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20181001.zip)
-	- 编译 esplay-base-firmware 需要 esp-idf-v4.4 版本 https://dl.espressif.com/github_assets/espressif/esp-idf/releases/download/v4.4.3/esp-idf-v4.4.3.zip
-
-- [[编译 esplay-base-firmware (esp-idf-4.4)]]
+- [[编译 esplay-base-firmware (esp-idf-4.2)]]
 - [[编译 esplay-retro-emulation (esp-idf-3.3)]]
 
 ### 其他

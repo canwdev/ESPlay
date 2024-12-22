@@ -1,5 +1,5 @@
-- 安装 esp-idf-v4.4 环境
-	- [快速入门 - ESP32 - — ESP-IDF 编程指南 v4.4.4 文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.4.4/esp32/get-started/index.html)
-	- Windows 用户直接下载 [esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe](https://dl.espressif.com/dl/idf-installer/esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe)
+- 安装 esp-idf-v4.2 环境
+	- [[esp-idf-v4.2#ESPlay Micro CMake 项目必须用 esp-idf-v4.2 版本]]
+	- [[编译 esplay-base-firmware (esp-idf-4.2)#1. 安装 esp-idf-v4.2 环境]]
 - 推荐使用 VS Code + esp-idf 插件，可以方便的编译、刷入或调试设备
 - 安装 CH341SER.EXE 驱动

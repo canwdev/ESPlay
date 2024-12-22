@@ -20,9 +20,15 @@ bootloader.bin=0x1000
 - 插入Micro SD卡，重新开机，选择固件并刷入，建议先选择 `v2.2-esplay-micro.fw` 如果没问题再刷其他固件
 - ![[bootloader-ui.jpg]]
 
+## 也可以使用命令行刷入
+
+```bat
+esptool.py --chip esp32 --port COM10 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size detect 0x1000 bootloader.bin 0xf000 phy_init_data.bin 0x10000 esplay-base-firmware.bin 0x8000 partitions.bin
+```
+
 ## ESPlay Micro 刷入 **[retro-go](https://github.com/ducalex/retro-go)** 固件
 
-![[Pasted image 20241218210256.png]]
+![[retro-go刷入.png]]
 
 1. 下载 `retro-go_1.43_esplay-micro.img`
 2. `esptool.py write_flash --flash_size detect 0x0 retro-go_1.43_esplay-micro.img`

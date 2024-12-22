@@ -1,4 +1,5 @@
 - [ESP-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/)推荐使用最新稳定版本，目前稳定版本为 [4.4.3](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.4.3/esp32/index.html)
+- 注意：[[esp-idf-v4.2#ESPlay Micro CMake 项目必须用 esp-idf-v4.2 版本]]
 
 ## v4.4.x 环境搭建
 

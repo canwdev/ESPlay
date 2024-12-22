@@ -3,14 +3,15 @@
 ![[esplay-base-firmware.jpg]]
 ## 参考
 
-- [[ESPlay Micro 制作记#固件编译]]
 - 原版：[pebri86/esplay-base-firmware: Bootloader or sdcard flasher for ESPlay HW ESP32 based device, based on odroid go base firmware (github.com)](https://github.com/pebri86/esplay-base-firmware)
 - 个人修改版：[canwdev/esplay-base-firmware: esplay-base-firmware 修改版](https://github.com/canwdev/esplay-base-firmware)
+- 注意：[[esp-idf-v4.2#ESPlay Micro CMake 项目必须用 esp-idf-v4.2 版本]]
 
-## 1. 安装 esp-idf-v4.4 环境
+## 1. 安装 esp-idf-v4.2 环境
 
-- [快速入门 - ESP32 - — ESP-IDF 编程指南 v4.4.4 文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.4.4/esp32/get-started/index.html)
-- Windows 用户直接下载 [esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe](https://dl.espressif.com/dl/idf-installer/esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe)
+- [Windows 平台工具链的标准设置 - ESP32 - — ESP-IDF 编程指南 v4.2.5 文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.2.5/esp32/get-started/windows-setup.html)
+- [ESP-IDF 全版本下载页面，Ctrl+F 搜索版本](https://dl.espressif.com/dl/esp-idf/?idf=4.4)
+	- Windows 用户直接下载 [esp-idf-tools-setup-offline-4.2.5.exe](https://github.com/espressif/idf-installer/releases/download/offline-4.2.5/esp-idf-tools-setup-offline-4.2.5.exe)
 
 ## 2. 执行命令开始编译：
 

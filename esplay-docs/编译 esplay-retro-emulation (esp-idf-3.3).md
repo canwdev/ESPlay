@@ -7,29 +7,53 @@
 - [pebri86/esplay-retro-emulation: Retro Emulation Collection for ESPlay Hardware, an ESP32 based game console (github.com)](https://github.com/pebri86/esplay-retro-emulation)
 - 个人修改版：[canwdev/esplay-retro-emulation](https://github.com/canwdev/esplay-retro-emulation)
 
-## 1. 安装 esp-idf-v4.4 环境
+## 1. 安装 esp-idf-v3.3 环境
 
-- [快速入门 - ESP32 - — ESP-IDF 编程指南 v4.4.4 文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v4.4.4/esp32/get-started/index.html)
-- Windows 用户直接下载 [esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe](https://dl.espressif.com/dl/idf-installer/esp-idf-tools-setup-espressif-ide-2.8.1-with-esp-idf-4.4.4.exe)
-
+- [快速入门 — ESP-IDF 编程指南 v3.3 文档 (espressif.com)](https://docs.espressif.com/projects/esp-idf/zh_CN/v3.3/get-started/index.html#id2)
+	- [Windows 平台工具链的标准设置 — ESP-IDF 编程指南 v3.3 文档](https://docs.espressif.com/projects/esp-idf/zh-cn/v3.3/get-started/windows-setup.html)
+	- [在用户配置文件中添加 IDF_PATH — ESP-IDF 编程指南 v3.3 文档](https://docs.espressif.com/projects/esp-idf/zh-cn/v3.3/get-started/add-idf_path-to-profile.html)
+- 配置环境变量 ![[idf3.3env.png]]
+- 启动 `mingw32.exe` 输入 `printenv IDF_PATH` 查看环境变量是否设置
+- ![[idf3.3env2.png]]
 ## 2. 克隆项目
 
-- 克隆 `esplay-base-firmware` 项目，因为有依赖工具。`git clone https://github.com/canwdev/esplay-base-firmware.git`
-- 克隆本项目到上一个项目的同级目录：`git clone https://github.com/canwdev/esplay-retro-emulation.git` 并进入项目目录
+```sh
+git clone https://github.com/canwdev/esplay-retro-emulation.git
+```
+- 切换分支 `idf-v3.3`
 
 ## 3. 编译
+
+```sh
+# 进入项目目录中的 esplay-launcher，改成你的
+cd /d/Project/dev-hardware/esplay-retro-emulation/esplay-launcher
+
+# 开始编译，16线程，根据你的CPU核心数量自行设置
+make -j16
+```
+
+编译成功后会在 build 文件夹生成 LauncherLite.bin
+## 4. 刷入
+
+连接设备并开机，Windows 用户打开设备管理器查找 CH340 设备，示例中的端口号为 `COM10`
+![[ch340.jpg]]
+运行 `make menuconfig` 配置串口的端口号，示例中的端口号为 `COM17`
+![[idf3.3串口配置.png]]
+
+```sh
+make -j16 flash
+
+# 或直接运行
+$IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port COM17 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size detect 0xd000 ./build/ota_data_initial.bin 0x1000 ./build/bootloader/bootloader.bin 0x10000 ./build/LauncherLite.bin 0x8000 ./build/partitions.bin
+```
+
+## 5. 编译生成 .fw
 
 - Windows 用户，先打开 ESP-IDF 环境，cd 到项目文件夹，并执行 `mkrelease.bat`
 - Linux 用户，执行 `mkrelease.sh`
 
 编译成功后会生成1个几MB 的 `001-esplay-retro-emu.fw` ，这个固件可以复制到 sd 卡的 `esplay/firmware/` 目录，并使用 bootloader 手动刷入。
 
-## 4. 命令行刷入
-
-```cmd
-cd .\esplay-launcher\
-idf.py -p COM10 -b 921600 flash
-```
 ---
 ## 旧版教程，请无视
 
